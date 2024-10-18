@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Movie Ticket Booking</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<header>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="logo">
+          <h1>🎟️ Exciting Movie Tickets</h1>
+        </div>
+        <ul id="nav-links" class="nav-links">
+            <li><a href="../views/index.pug">Home</a></li>
+            <li><a href="../views/movies.pug">Movies</a></li>
+            <li><a href="../views/contact.pug">Contact</a></li>
+            <li><a href="../views/about.pug">About</a></li>
+        </ul>
+
+        <ul class="nav-links-mobile">
+            <li><a href="../views/index.pug">Home</a></li>
+            <li><a href="../views/movies.pug">Movies</a></li>
+            <li><a href="../views/contact.pug">Contact</a></li>
+            <li><a href="../views/about.pug">About</a></li>
+        </ul>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+</header>
+<body>
+
+      
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="slideshow">
+            <div class="slide" style="background-image: url('../static/gladiator2.png');"></div>
+            <div class="slide" style="background-image: url('../static/background2.jpg');"></div>
+            <div class="slide" style="background-image: url('../static/background3.jpg');"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Book Your Movie Tickets Online</h1>
+            <p>Enjoy the latest movies from the comfort of your home.</p>
+            <a href="../views/movies.pug" class="btn">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Movie Tickets. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../static/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Movie Ticket Booking</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/movies.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<header>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="logo">
+            <h1>🎟️ Exciting Movie Tickets</h1>
+        </div>
+        <ul id="nav-links" class="nav-links">
+            <li><a href="../views/index.pug">Home</a></li>
+            <li><a href="../views/movies.pug">Movies</a></li>
+            <li><a href="../views/contact.pug">Contact</a></li>
+            <li><a href="../views/about.pug">About</a></li>
+        </ul>
+
+        <ul class="nav-links-mobile">
+            <li><a href="../views/index.pug">Home</a></li>
+            <li><a href="../views/movies.pug">Movies</a></li>
+            <li><a href="../views/contact.pug">Contact</a></li>
+            <li><a href="../views/about.pug">About</a></li>
+        </ul>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+</header>
+<body>
+
+
+    <!-- Movies Section -->
+    <!-- Movies Section -->
+    <section id="movies" class="movies">
+        <h2>Available Movies</h2>
+        <div class="movie-list">
+            <div class="movie">
+                <img src="../static/gladiator2.png" alt="Movie 1">
+                <h3>Gladiator ||</h3>
+                <p>After his home is conquered by the tyrannical emperors who now lead Rome, Lucius is forced to enter the Colosseum and must look to his past to find strength to return the glory of Rome to its people.</p>
+                <p>November 22 2024</p>
+                <p>8:00 PM </p>
+                <button class="btn" data-movie="Movie Title 1">Book Now</button>
+            </div>
+            <div class="movie">
+                <img src="../static/F1.png" alt="Movie 2">
+                <h3>F1</h3>
+                <p>F1 is an upcoming American sports action drama film directed by Joseph Kosinski and written by Ehren Kruger featuring the Formula One World Championship, created in collaboration with the FIA, its governing body. The film stars Brad Pitt, Damson Idris, Kerry Condon, Tobias Menzies, Javier Bardem and Sarah Niles.</p>
+                <p>June 25 2025</p>
+                <p>10:00 AM </p>
+                <button class="btn" data-movie="Movie Title 2">Book Now</button>
+            </div>
+            <div class="movie">
+                <img src="../static/Venom.png" alt="Movie 3">
+                <h3>Venom: The Last Dance</h3>
+                <p>Eddie and Venom are on the run. Hunted by both of their worlds and with the net closing in, the duo are forced into a devastating decision that will bring the curtains down on Venom and Eddie's last dance.</p>
+                <p>October 25 2024</p>
+                <p>3:00 PM</p>
+                <button class="btn" data-movie="Movie Title 3">Book Now</button>
+            </div>
+
+            <div class="movie">
+                <img src="../static/sonic3.png" alt="Movie 4">
+                <h3>Sonic the Hedgehog 3</h3>
+                <p>Sonic, Knuckles, and Tails reunite against a powerful new adversary, Shadow, a mysterious villain with powers unlike anything they have faced before. With their abilities outmatched, Team Sonic must seek out an unlikely alliance.</p>
+                <p>December 20 2024</p>
+                <p>6:00 PM</p>
+                <button class="btn" data-movie="Movie Title 4">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Movie Tickets. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../static/index.js"></script>
+    
+    <script src="../static/movies.js"></script>
+</body>
+</html>

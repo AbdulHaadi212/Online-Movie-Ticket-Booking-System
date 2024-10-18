@@ -1,0 +1,156 @@
+/* General Styles */
+.movies {
+    padding: 4rem 2rem;
+    background: radial-gradient(circle, rgba(20, 20, 20, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.movies h2 {
+    margin-top: 40px;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: #f8f9fa;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+/* Glowing effect and cinematic feel for Movie Cards */
+.movie-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.movie {
+    background: rgba(30, 30, 30, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 0, 102, 0.7), 0 0 40px rgba(255, 0, 102, 0.5);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    flex: 1 1 30%;
+    margin-bottom: 2rem;
+    max-width: 30%;
+    overflow: hidden;
+    position: relative;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 0, 102, 0.3);
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    filter: brightness(70%);
+}
+
+.movie h3 {
+    font-size: 2rem;
+    margin: 1.5rem 0 0.5rem;
+    color: #ff79c6;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 10px rgba(255, 0, 102, 0.8);
+}
+
+.movie p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    padding: 0 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.movie .btn {
+    background-color: #ff79c6;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 15px rgba(255, 0, 102, 0.8);
+}
+
+/* Hover effects for glowing and animation */
+.movie:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 0, 102, 0.9), 0 0 60px rgba(255, 0, 102, 0.7);
+}
+
+.movie:hover img {
+    transform: scale(1.1);
+    filter: brightness(85%);
+}
+
+.movie .btn:hover {
+    background-color: #ff4081;
+    box-shadow: 0 0 20px rgba(255, 0, 102, 1), 0 0 50px rgba(255, 0, 102, 0.8);
+}
+
+/* Responsive Styles for Tablets and Mobile */
+@media (max-width: 992px) {
+    .movie-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie {
+        flex: 1 1 100%;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .movies {
+        padding: 2rem 1rem;
+    }
+
+    .movies h2 {
+        font-size: 2.5rem;
+    }
+
+    .movie {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .movie h3 {
+        font-size: 1.8rem;
+    }
+
+    .movie p {
+        font-size: 0.9rem;
+    }
+
+    .movie .btn {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.3rem;
+    }
+}
+
+/* Background Glowing Effect (optional for more cinema style) */
+.movies::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 0, 102, 0.3) 0%, transparent 70%);
+    z-index: 0;
+    filter: blur(100px);
+}
